@@ -1,12 +1,9 @@
 import os
-import sys
-from pathlib import Path 
+from pathlib import Path
 
-project_name="sentiment_analysis"
+project_name = "sentiment_analysis"
 
-list_files=[
-    list_of_files = [
-
+list_of_files = [
     f"{project_name}/__init__.py",
     f"{project_name}/components/__init__.py",
     f"{project_name}/components/data_ingestion.py",
@@ -16,9 +13,9 @@ list_files=[
     f"{project_name}/components/register.py",
     f"{project_name}/exception/__init__.py",
     f"{project_name}/logger/__init__.py",
-    f"{project_name}/pipline/__init__.py",
-    f"{project_name}/pipline/training_pipeline.py",
-    f"{project_name}/pipline/prediction_pipeline.py",
+    f"{project_name}/pipeline/__init__.py",
+    f"{project_name}/pipeline/training_pipeline.py",
+    f"{project_name}/pipeline/prediction_pipeline.py",
     "app.py",
     "requirements.txt",
     "Dockerfile",
@@ -27,4 +24,14 @@ list_files=[
     "setup.py",
     "params.yaml"
 ]
-]
+
+for filepath in list_of_files:
+    filepath = Path(filepath)
+    filedir = filepath.parent
+    if filedir != Path("."):
+        os.makedirs(filedir, exist_ok=True)
+    if not filepath.exists() or filepath.stat().st_size == 0:
+        with open(filepath, "w") as f:
+            pass
+    else:
+        print(f"File is already present at: {filepath}")
