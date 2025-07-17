@@ -1,0 +1,15 @@
+artifact_uri: file:///j:/Sentiment-Analysis/notebook/mlruns/470819407517998660/e14b2f8e6217459887451144a95fa532/artifacts
+end_time: 1752760897979
+entry_point_name: ''
+experiment_id: '470819407517998660'
+lifecycle_stage: active
+run_id: e14b2f8e6217459887451144a95fa532
+run_name: TF-IDF_(1, 1)_RandomForest
+run_uuid: e14b2f8e6217459887451144a95fa532
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752760865027
+status: 3
+tags: []
+user_id: PraSaI
