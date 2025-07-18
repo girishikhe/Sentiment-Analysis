@@ -1,0 +1,20 @@
+artifact_path: random_forest_model_tfidf_trigrams_imbalance_class_weights
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.8.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.3.2
+mlflow_version: 2.17.0
+model_size_bytes: 8329805
+model_uuid: bff55ef190994f58acd71a4fedf6da79
+run_id: edca058a25634c0280815801d5c42730
+utc_time_created: '2025-07-18 07:39:24.785167'
