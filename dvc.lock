@@ -1,0 +1,19 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python 
+      J:/Sentiment-Analysis/sentiment_analysis/components/data_ingestion.py
+    deps:
+    - path: sentiment_analysis\components\data_ingestion.py
+      hash: md5
+      md5: 78dc5f82673127de0cd9f6b8e87ef5c7
+      size: 5076
+    params:
+      params.yaml:
+        data_ingestion.test_size: 0.2
+    outs:
+    - path: data/raw
+      hash: md5
+      md5: e13bcce40396cd334c8a7a334868166a.dir
+      size: 6919701
+      nfiles: 2
