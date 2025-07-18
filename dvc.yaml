@@ -7,3 +7,12 @@ stages:
     - data_ingestion.test_size
     outs:
     - data/raw
+
+  data_preprocessing:
+    cmd: python J:/Sentiment-Analysis/sentiment_analysis/components/data_transformation.py
+    deps:
+    - data/raw/train.csv
+    - data/raw/test.csv
+    - J:/Sentiment-Analysis/sentiment_analysis/components/data_transformation.py
+    outs:
+    - data/interim
