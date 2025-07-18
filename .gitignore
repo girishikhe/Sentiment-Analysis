@@ -175,3 +175,5 @@ cython_debug/
 
 
 sentiment*/
+/lgbm_model.pkl
+/tfidf_vectorizer.pkl
