@@ -69,3 +69,32 @@ stages:
       hash: md5
       md5: dcd56fcf40b224c70b69a7c9b2912c45
       size: 18360853
+  model_evaluation:
+    cmd: python 
+      J:/Sentiment-Analysis/sentiment_analysis/components/model_evaluation.py
+    deps:
+    - path: data/interim/test_processed.csv
+      hash: md5
+      md5: 4f30375397ec89fead1745ee6d70f201
+      size: 1000526
+    - path: data/interim/train_processed.csv
+      hash: md5
+      md5: 35027dfda8274bd9356544f2ff358aa4
+      size: 4134324
+    - path: lgbm_model.pkl
+      hash: md5
+      md5: 7776e68b737ac3a54b6d6421c86ed472
+      size: 3886741
+    - path: sentiment_analysis\components\model_evaluation.py
+      hash: md5
+      md5: 6fb9a7b81dfd0111eee183ce0e1b466e
+      size: 6121
+    - path: tfidf_vectorizer.pkl
+      hash: md5
+      md5: dcd56fcf40b224c70b69a7c9b2912c45
+      size: 18360853
+    outs:
+    - path: experiment_info.json
+      hash: md5
+      md5: b5d26eeab5c22972cf830a2ac966dc6b
+      size: 169
