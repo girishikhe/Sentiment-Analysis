@@ -42,3 +42,9 @@ stages:
       - J:/Sentiment-Analysis/sentiment_analysis/components/model_evaluation.py
     outs:
       - experiment_info.json
+
+  model_registration:
+    cmd: python J:/Sentiment-Analysis/sentiment_analysis/components/register.py
+    deps:
+    - experiment_info.json
+    - J:/Sentiment-Analysis/sentiment_analysis/components/register.py

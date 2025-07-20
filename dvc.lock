@@ -98,3 +98,14 @@ stages:
       hash: md5
       md5: b5d26eeab5c22972cf830a2ac966dc6b
       size: 169
+  model_registration:
+    cmd: python J:/Sentiment-Analysis/sentiment_analysis/components/register.py
+    deps:
+    - path: experiment_info.json
+      hash: md5
+      md5: b5d26eeab5c22972cf830a2ac966dc6b
+      size: 169
+    - path: sentiment_analysis\components\register.py
+      hash: md5
+      md5: 304b21dd9ab4f1b90b55e4c24d94d36f
+      size: 2088
